@@ -1,0 +1,27 @@
+{
+  "name": "cors-proxy-server",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntiHero/CORS-Proxy-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntiHero/CORS-Proxy-Server/issues"
+  },
+  "homepage": "https://github.com/AntiHero/CORS-Proxy-Server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "fastify": "^3.19.1",
+    "fastify-express": "^0.3.3",
+    "node-fetch": "^2.6.1"
+  }
+}
