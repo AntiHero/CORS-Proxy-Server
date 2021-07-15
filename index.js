@@ -7,18 +7,16 @@ const start = async () => {
   await fastify.register(require("fastify-express"));
   fastify.use(require("body-parser").json({ limit }));
 
-  fastify.get('/', async function(_, res) {
-    res.send('CORS server is running');
+  fastify.get("/", async function (_, res) {
+    res.send("CORS server is running");
   });
 
   fastify.all("*", async function (req, res, next) {
-    console.log(res)
+    console.log(res);
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, PUT, PATCH, POST, DELETE");
-    console.log(req.headers, 'headers');
+    console.log(req.headers, "headers");
     res.header("Access-Control-Allow-Headers", "*");
-
-    
   });
 
   try {
